@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<style>
+    h1 {
+        font-size: 18px;
+    }
+    p{
+        text-transform: capitalize;
+    }
+</style>
+
+<body>
+    <h1>JavaScript Object</h1>
+    <p id="demo1"></p>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <script>
+        let employee = {
+            firstName: 'Peter',
+            lastName: 'Doe',
+            employeeId: 1
+        };
+        document.getElementById('demo').innerHTML = ('ssn' in employee);
+        document.getElementById('demo1').innerHTML = ('employeeId' in employee);
+        document.getElementById('demo2').innerHTML = ('firstName' in employee);
+        document.getElementById('demo3').innerHTML = ('Person' in employee);
+    </script>
+</body>
+
+</html>

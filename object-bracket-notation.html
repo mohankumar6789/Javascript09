@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<style>
+    h1 {
+        font-size: 18px;
+    }
+
+    p {
+        text-transform: capitalize;
+    }
+</style>
+
+<body>
+    <h1>JavaScript Object Notation</h1>
+    <div class="result"></div>
+    <button class="btn">JavaScript Object bracket Notation</button>
+    <script>
+        let result = document.querySelector(".result");
+        let btnclick = document.querySelector(".btn");
+
+        function Student(name, age, qualification){
+            this.name = name;
+            this.age = age;
+            this.qualification = qualification;
+        }
+        let student = new Student('Kumar', 25, 'BCA');
+        btnclick.addEventListener("click", () => {
+            let str = "name";
+            str1 = "age";
+            str2 = "qualification";
+            result.innerHTML += "Using dot notation <br>student.name = " + student[str] + "<br>";
+            result.innerHTML += "student.age = " + student[str1] + "<br>";
+            result.innerHTML += "student.qualification = " + student[str2];
+         })
+    </script>
+</body>
+
+</html>

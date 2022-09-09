@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<style>
+    h1 {
+        font-size: 18px;
+    }
+</style>
+
+<body>
+    <h1>JavaScript Object Inheritance</h1>
+    <p id="demo"></p>
+    <script>
+    class Person {
+        constructor(info) {
+          this.Personname = info;
+        }
+        present() {
+          return 'I have Completed' + " " + this.Personname;
+        }
+      }
+      
+      class education extends Person {
+        constructor(info, edu) {
+          super(info);
+          this.education = edu;
+        }
+        show() {
+          return this.present() + ', Its a ' + this.education;
+        }
+      }
+      
+      let myPerson = new education("MCA", "Master Computer of Applications");
+      document.getElementById("demo").innerHTML = myPerson.show();
+    </script>
+</body>
+
+</html>

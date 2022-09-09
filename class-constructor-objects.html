@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<style>
+    h1 {
+        font-size: 18px;
+    }
+</style>
+<body>
+    <h1>JavaScript Class and Objects Constructor</h1>
+    <p id="demo"></p>
+    <script>
+        class learnings {
+            constructor(brand) {
+                this.scriptLanguage = brand;
+            }
+        }
+        mylearnings = new learnings("Javascript");
+        document.getElementById("demo").innerHTML = "I'm learning the" + ' ' + mylearnings.scriptLanguage;
+    </script>
+</body>
+</html>

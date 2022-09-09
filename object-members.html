@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<style>
+    h1 {
+        font-size: 18px;
+    }
+
+    p {
+        text-transform: capitalize;
+    }
+</style>
+
+<body>
+    <h1>JavaScript Object Members</h1>
+    <button class="btn">Object Member</button>
+    <div style="margin-top: 10px;" class="result"></div>
+    <script>
+        let result = document.querySelector(".result");
+        let btnclick = document.querySelector(".btn");
+        let student = {};
+        btnclick.addEventListener("click", () => {
+            student.name = "MohanKumar";
+            student.designation = "Module Lead";
+            student.displayInformation = function () {
+                result.innerHTML = "Name: " + this.name +  "<br> Desgination: " + this.designation;
+            };
+            student.displayInformation();
+        });
+    </script>
+</body>
+</html>

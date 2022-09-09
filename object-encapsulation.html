@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<style>
+    h1 {
+        font-size: 18px;
+    }
+</style>
+
+<body>
+    <h1>JavaScript Object Encapsulation</h1>
+    <script>
+        class Employee {
+            constructor() {
+                var name;
+                var rating;
+            }
+            getName() {
+                return this.name;
+            }
+            setName(name) {
+                this.name = name;
+            }
+
+            getRating() {
+                return this.rating;
+            }
+            setRating(rating) {
+                this.rating = rating;
+            }
+        }
+        var emp = new Employee();
+        emp.setName("Mohankumar");
+        emp.setRating(5);
+        document.writeln(emp.getName() + " " + emp.getRating());
+    </script>
+</body>
+</html>
